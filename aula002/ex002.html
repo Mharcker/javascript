@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios Junior</title>
+</head>
+<body>
+    <header>
+        <h1>Alguns dos desafios da Aula 01 resolvidos</h1>
+    </header>
+    <main>
+        <article>
+            <h3>D003</h3>
+            <p>Resultado do desafio</p>
+        </article>
+    </main>
+    <script>
+        var hour = window.prompt("Quantas horas ce trabalha meu filho?");
+        var payment = window.prompt("Quanto você recebe por hora?");
+
+        function calculosalario(hora, pagamento){
+            return `Salário igual a R$ ${hora*pagamento}`;
+        }
+        
+        document.write(calculosalario(Number.parseFloat(hour),Number.parseFloat(payment)));
+        
+    </script>
+</body>
+</html>
