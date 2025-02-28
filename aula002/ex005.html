@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios Junior</title>
+</head>
+<body>
+    <header>
+        <h1>Alguns dos desafios da Aula 01 resolvidos</h1>
+    </header>
+    <main>
+        <article>
+            <h3>D006</h3>
+            <p>Resultado do desafio</p>
+        </article>
+    </main>
+    <script>
+        var n1 = "true";
+        //Infelizmente não vai ter interação
+
+        function quemehessepokemon(numero1){
+            if(typeof(numero1)=='number'){
+                return `${-numero1}`;
+            }else if(typeof(numero1)=='boolean'){
+                return `${!numero1}`;
+            }else{
+                return `booleano ou número esperado, mas o parâmetro é do tipo ${typeof(numero1)}`; 
+            }
+            
+        }
+        
+        document.write(quemehessepokemon(n1));
+
+    </script>
+</body>
+</html>

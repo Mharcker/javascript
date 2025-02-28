@@ -11,20 +11,19 @@
     </header>
     <main>
         <article>
-            <h3>D003</h3>
+            <h3>D004</h3>
             <p>Resultado do desafio</p>
         </article>
     </main>
     <script>
         
-        var hour = window.prompt("Quantas horas ce trabalha meu filho?");
-        var payment = window.prompt("Quanto você recebe por hora?");
-
-        function calculosalario(hora, pagamento){
-            return `Salário igual a R$ ${hora*pagamento}`;
+        var month = window.prompt("Diga el nombre de los mEs (numero do mes :) ) ");
+        var mesesdoano = ["Maneiro","Fevereiro","Márcio","Abriu","Maiô","Juninho", "Júlio","À gosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+        function quemeseesse(mes){
+            return `O mês é ${mesesdoano[mes-1]}`;
         }
         
-        document.write(calculosalario(Number.parseFloat(hour),Number.parseFloat(payment)));
+        document.write(quemeseesse(month));
 
     </script>
 </body>

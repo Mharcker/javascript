@@ -11,20 +11,20 @@
     </header>
     <main>
         <article>
-            <h3>D003</h3>
+            <h3>D005</h3>
             <p>Resultado do desafio</p>
         </article>
     </main>
     <script>
         
-        var hour = window.prompt("Quantas horas ce trabalha meu filho?");
-        var payment = window.prompt("Quanto você recebe por hora?");
-
-        function calculosalario(hora, pagamento){
-            return `Salário igual a R$ ${hora*pagamento}`;
+        var n1 = window.prompt("Digite um numero: ");
+        var n2 = window.prompt("Digite outro numero: ");
+        
+        function ehmaior(numero1,numero2){
+            return `The first is greater than the second?? ${numero1>numero2}`;
         }
         
-        document.write(calculosalario(Number.parseFloat(hour),Number.parseFloat(payment)));
+        document.write(ehmaior(n1,n2));
 
     </script>
 </body>
