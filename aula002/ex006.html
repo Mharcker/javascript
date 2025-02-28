@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios Junior</title>
+</head>
+<body>
+    <header>
+        <h1>Alguns dos desafios da Aula 01 resolvidos</h1>
+    </header>
+    <main>
+        <article>
+            <h3>D007</h3>
+            <p>Resultado do desafio</p>
+        </article>
+    </main>
+    <script>
+        
+        var number = window.prompt("Digite um número");
+        var min = window.prompt("Digite o valor mínimo do intervalo");
+        var max = window.prompt("Digite o valor máximo do intervalo");
+        var included = false;
+
+        function estaentre(numero,minimo,maximo,incluso){
+            if(incluso){
+                if(numero<=maximo && numero>=minimo){
+                    return true;
+                }else{return false;}
+            }else{
+                if(numero<maximo && numero>minimo){
+                    return true;
+                }else{return false;}
+            }
+        }
+        
+        document.write(estaentre(Number.parseInt(number),Number.parseInt(min),Number.parseInt(max),included));
+
+    </script>
+</body>
+</html>

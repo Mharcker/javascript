@@ -11,8 +11,8 @@
     </header>
     <main>
         <article>
-            <h3>D005</h3>
-            <p>Resultado do desafio</p>
+            <h3>D005 e D008</h3>
+            <p>Resultado do desafio </p>
         </article>
     </main>
     <script>
@@ -21,10 +21,19 @@
         var n2 = window.prompt("Digite outro numero: ");
         
         function ehmaior(numero1,numero2){
-            return `The first is greater than the second?? ${numero1>numero2}`;
+            return `The first is greater than the second?? ${numero1>numero2}   `;
+        }
+        function multiplicacao(numero1,numero2){ 
+            var resultado = 0;
+            while(numero2>0){
+                resultado += numero1;
+                numero2--;
+            }
+            return resultado;
         }
         
         document.write(ehmaior(n1,n2));
+        document.write(`A multiplicação de ${n1} com ${n2} é ${multiplicacao(Number.parseInt(n1),Number.parseInt(n2))}`);
 
     </script>
 </body>
