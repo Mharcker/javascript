@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios Junior</title>
+</head>
+<body>
+    <header>
+        <h1>Alguns dos desafios da Aula 01 resolvidos</h1>
+    </header>
+    <main>
+        <article>
+            <h3>D001</h3>
+            <p>Resultado do desafio</p>
+        </article>
+    </main>
+    <script>
+        var nam = window.prompt("Qual é o seu nome?");
+        var age = window.prompt("Qual é a sua idade?");
+
+        function olanome(nome){
+            return `Olá, ${nome}!`;
+        }
+        function anosemdias(idade){
+            return `A sua idade em dias é ${365*idade}`;
+        }
+        document.write(olanome(nam));
+        document.write(anosemdias(age));
+    </script>
+</body>
+</html>
