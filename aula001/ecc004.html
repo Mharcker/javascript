@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Maluca</title>
+    <style>
+        body{
+            background-color: rgb(63, 43, 243);
+            color: wheat;
+            font: normal 18pt "Arial, sans_serif";
+        }
+        h1{
+            color: yellow;
+            text-shadow: 1px 1px black;
+        }
+        div{
+            background-color: rgb(32, 178, 129);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        input{
+            width: 200px;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora Maluca</h1>
+    <p>A calculadora maluca é uma produção de &copy;SnakeProductions, todos os diretos estão reservados a LolliSafadinha2001</p>
+    <input type="number" name="tn1" id="tn1"> + 
+    <input type="number" name="tn2" id="tn2">
+    <input type="button" value="somar" onclick="somar()">
+    <p id="resultado">Resultado</p>
+    <script>
+        var t1 = window.document.getElementById('tn1');
+        var t2 = window.document.getElementById('tn2');
+        var res = window.document.getElementById('resultado')
+
+        function somar(){
+            var n1 = Number(t1.value);
+            var n2 = Number(t2.value);
+            var n3 = n1*n2;
+            res.innerHTML = `${n1} - ${n2} = <strong>${n3}</strong>`;
+        }
+
+    </script>
+</body>
+</html>

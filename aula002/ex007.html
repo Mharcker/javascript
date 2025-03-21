@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios Junior</title>
+</head>
+<body>
+    <header>
+        <h1>Alguns dos desafios da Aula 01 resolvidos</h1>
+    </header>
+    <main>
+        <article>
+            <h3>D009</h3>
+            <p>Resultado do desafio</p>
+        </article>
+    </main>
+    <script>
+        
+        var number = window.prompt("Digite um número");
+        var rep = window.prompt("Digite a quantidade de repetições: ");
+
+        function criadorArray(numero,repeticoes){
+            var array = [];
+            if(repeticoes>0){
+                repeticoes--;
+                criadorArray(numero,repeticoes);
+                array.push(numero);
+            }
+            return array;
+        }
+        
+        document.write(criadorArray(number,rep));
+
+    </script>
+</body>
+</html>

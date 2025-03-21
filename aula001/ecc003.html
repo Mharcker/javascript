@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background-color: rgb(63, 43, 243);
+            color: wheat;
+            font: normal 18pt "Arial, sans_serif";
+        }
+        h1{
+            color: yellow;
+            text-shadow: 1px 1px black;
+        }
+        div{
+            background-color: rgb(32, 178, 129);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos DOM</h1>
+    <div id="botao" onclick="clicar() ">Clique aqui</div>
+    <script>
+        var a = window.document.getElementById('botao')
+
+        a.addEventListener('mouseenter',passarmouse)
+        a.addEventListener('mouseout',tirarmouse)
+
+        function clicar(){
+            a.innerText="click!"
+            a.style.color = 'red';
+        }
+        function passarmouse(){
+            a.innerText = "Eu acho que ENTRô"
+            a.style.color = 'blue';
+
+        }
+        function tirarmouse(){
+            a.innerText="UuhUHUuuuUh"
+            a.style.color = 'yellow';
+        }
+    </script>
+</body>
+</html>
