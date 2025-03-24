@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios Junior JS</title>
+</head>
+<body>
+    <h1>D010 e D011</h1>
+    <h2>Resolução:</h2>
+    <input type="text" name="word" id="word">
+    <input type="number" name="rep" id="rep">
+    <input type="button" value="Criar" onclick="criarArray()">
+    <script>
+        function arrayCriar(palavra, repete){
+            var array = [palavra];
+            for(var i=0; i<repete-1; i++){
+                array.push(palavra);
+            }
+            return array;
+        }
+        function criarArray(){
+            var word = window.document.getElementById('word');
+            var rep =  window.document.getElementById('rep');
+            var palavra = word.value;
+            var rpt = Number(rep.value);
+            return window.document.write("["+ arrayCriar(palavra,rpt) +"]");
+        }
+    </script>
+</body>
+</html>
