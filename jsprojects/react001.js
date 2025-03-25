@@ -7,5 +7,8 @@
 function CapsLock(props){
     const a = props.children;    
     const Caps = a.toUpperCase;
-    return <div>{Caps}</div>;
+    return (
+    <div>
+        {Caps}
+    </div>);
 }
